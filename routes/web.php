@@ -16,7 +16,7 @@ use App\Driver;
 Route::get('/', function () {
     $types = Driver::with('type')->get()->groupBy(function ($driver) {
         return $driver->type->name;
-    });
+    })->sortKeys();
 
     return view('welcome', [
         'types' => $types,
