@@ -12,7 +12,7 @@
     <div id="app">
       @yield('body')
 
-      <footer>
+      <footer class="border-t container mt-8 mx-auto pt-4">
         Site by <a href="https://tighten.co/">Tighten</a>, made in ~20 minutes. More to come, obv.
       </footer>
     </div>
