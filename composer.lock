@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "94d4bf9ac7f4a933030e46a346ee2917",
+    "content-hash": "94ff2b2de3ade20adf6b5fe131c6f176",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -2634,6 +2634,50 @@
     ],
     "packages-dev": [
         {
+            "name": "adamwathan/laravel-preset",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/adamwathan/laravel-preset.git",
+                "reference": "5848456a4eed24b0ff0f2205c60f248ed6ccb4ae"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/adamwathan/laravel-preset/zipball/5848456a4eed24b0ff0f2205c60f248ed6ccb4ae",
+                "reference": "5848456a4eed24b0ff0f2205c60f248ed6ccb4ae",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^5.7"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "NothingWorks\\LaravelPreset\\PresetServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "NothingWorks\\LaravelPreset\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Adam Wathan's Laravel Frontend Preset",
+            "keywords": [
+                "laravel",
+                "preset"
+            ],
+            "support": {
+                "source": "https://github.com/adamwathan/laravel-preset/tree/master",
+                "issues": "https://github.com/adamwathan/laravel-preset/issues"
+            },
+            "time": "2018-09-10T15:02:59+00:00"
+        },
+        {
             "name": "beyondcode/laravel-dump-server",
             "version": "1.2.2",
             "source": {
@@ -4399,7 +4443,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "adamwathan/laravel-preset": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
