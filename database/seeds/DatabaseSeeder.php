@@ -1,5 +1,7 @@
 <?php
 
+use App\Driver;
+use App\Type;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -11,6 +13,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+        factory(Type::class, 5)->create()->each(function ($type) {
+            factory(Driver::class, 5)->create([
+                'type_id' => $type->id,
+            ]);
+        });
     }
 }

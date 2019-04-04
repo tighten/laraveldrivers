@@ -1,5 +1,7 @@
 <?php
 
+use App\Driver;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,5 +14,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $types = Driver::with('type')->get()->groupBy(function ($driver) {
+        return $driver->type->name;
+    });
+
+    return view('welcome', [
+        'types' => $types,
+    ]);
 });

@@ -11,6 +11,10 @@
   <body class="font-sans antialiased text-black leading-tight">
     <div id="app">
       @yield('body')
+
+      <footer>
+        Site by <a href="https://tighten.co/">Tighten</a>, made in ~20 minutes. More to come, obv.
+      </footer>
     </div>
     <script src="{{ mix('js/app.js') }}"></script>
   </body>
