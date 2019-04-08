@@ -5,13 +5,13 @@
         <h1 class="font-sans py-4 text-5xl">Laravel Drivers</h1>
     </div>
     <div class="container mx-auto">
-        <ul class="list-reset flex border-b">
+        <ul class="border-b flex list-reset">
             @php
                 $activeType = Request::segments(0)[0];
             @endphp
             @foreach ($types as $eachtype)
             <li class="-mb-px mr-1">
-                <a class="bg-white inline-block py-2 px-4{{ $activeType == $eachtype->name ? ' text-blue-dark border-l border-t border-r rounded-t font-semibold' : ' border-b' }}" href="/{{ $eachtype->name }}">{{ ucwords($eachtype->name) }}</a>
+                <a class="bg-white inline-block px-4 py-2{{ $activeType == $eachtype->name ? ' border-l border-r border-t font-semibold rounded-t text-blue-dark' : ' border-b' }}" href="/{{ $eachtype->name }}">{{ ucwords($eachtype->name) }}</a>
             </li>
             @endforeach
         </ul>
