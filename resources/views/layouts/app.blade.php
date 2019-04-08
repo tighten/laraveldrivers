@@ -12,7 +12,7 @@
     <div id="app">
       @yield('body')
 
-      <footer class="border-t container mt-8 mx-auto pt-4">
+      <footer class="border-t container mt-8 mx-auto pt-4 px-4">
         Site by <a href="https://tighten.co/">Tighten</a>, made in ~20 minutes. More to come, obv. <a href="https://github.com/tightenco/laraveldrivers">GitHub</a>
       </footer>
     </div>

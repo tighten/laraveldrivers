@@ -4,7 +4,7 @@
     <div class="border-b flex items-center justify-center mb-8">
         <h1 class="font-sans py-4 text-5xl">Laravel Drivers</h1>
     </div>
-    <div class="container mx-4 lg:mx-auto">
+    <div class="container px-4 mx-auto">
         @php
             $activeType = Request::segments(0)[0];
         @endphp
