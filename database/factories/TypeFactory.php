@@ -5,6 +5,6 @@ use Faker\Generator as Faker;
 
 $factory->define(Type::class, function (Faker $faker) {
     return [
-        'name' => $faker->sentence,
+        'name' => ucwords($faker->word),
     ];
 });
