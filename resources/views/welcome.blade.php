@@ -16,7 +16,7 @@
             @endforeach
         </ul>
 
-        <h2 class="mt-4 text-3xl">{{ $type->name }} Drivers</h2>
+        <h2 class="mt-4 text-3xl">{{ ucwords($type->name) }} Drivers</h2>
 
         <ul>
         @forelse ($type->drivers as $driver)
