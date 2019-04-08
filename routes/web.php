@@ -1,6 +1,7 @@
 <?php
 
 use App\Driver;
+use App\Type;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,11 +15,12 @@ use App\Driver;
 */
 
 Route::get('/', function () {
-    $types = Driver::with('type')->get()->groupBy(function ($driver) {
-        return $driver->type->name;
-    })->sortKeys();
+    return redirect('/' . Type::orderBy('name')->first()->name);
+});
 
+Route::get('/{type}', function (Type $type) {
     return view('welcome', [
-        'types' => $types,
+        'type' => $type,
+        'types' => Type::orderBy('name')->get(),
     ]);
 });
