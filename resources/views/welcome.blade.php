@@ -11,7 +11,7 @@
             @endphp
             @foreach ($types as $eachtype)
             <li class="-mb-px mr-1">
-                <a class="bg-white inline-block py-2 px-4{{ $activeType == $eachtype->name ? ' text-blue-dark border-l border-t border-r rounded-t font-semibold' : ' border-b' }}" href="/{{ $eachtype->name }}">{{ $eachtype->name }}</a>
+                <a class="bg-white inline-block py-2 px-4{{ $activeType == $eachtype->name ? ' text-blue-dark border-l border-t border-r rounded-t font-semibold' : ' border-b' }}" href="/{{ $eachtype->name }}">{{ ucwords($eachtype->name) }}</a>
             </li>
             @endforeach
         </ul>
