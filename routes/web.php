@@ -15,12 +15,16 @@ use App\Type;
 */
 
 Route::get('/', function () {
-    return redirect('/' . Type::orderBy('name')->first()->name);
+    return redirect()->route('types.show', [Type::orderBy('name')->first()->name]);
 });
 
-Route::get('/{type}', function (Type $type) {
+Route::get('/types', function () {
+    return redirect()->route('types.show', [Type::orderBy('name')->first()->name]);
+})->name('types.index');
+
+Route::get('/types/{type}', function (Type $type) {
     return view('welcome', [
         'type' => $type,
         'types' => Type::orderBy('name')->get(),
     ]);
-});
+})->name('types.show');
