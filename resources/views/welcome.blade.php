@@ -6,7 +6,7 @@
     </div>
     <div class="container px-4 mx-auto">
         @php
-            $activeType = Request::segments(0)[0];
+            $activeType = Request::route('type')->name;
         @endphp
         <ul class="border-b hidden list-reset md:flex">
             @foreach ($types as $eachtype)
