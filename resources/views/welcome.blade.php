@@ -2,7 +2,7 @@
 
 @section('body')
     <div class="border-b flex items-center justify-center mb-8">
-        <h1 class="font-sans py-4 text-5xl">Laravel Drivers</h1>
+        <a href="/" class="no-underline text-black"><h1 class="font-sans py-4 text-5xl">Laravel Drivers</h1></a>
     </div>
     <div class="container px-4 mx-auto">
         @php
