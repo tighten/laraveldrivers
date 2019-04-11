@@ -46,7 +46,7 @@ class Driver extends Resource
 
             Text::make('name'),
 
-            Text::make('url'),
+            Text::make('url')->hideFromIndex(),
 
             BelongsTo::make('Type'),
         ];
@@ -71,7 +71,9 @@ class Driver extends Resource
      */
     public function filters(Request $request)
     {
-        return [];
+        return [
+            new \App\Nova\Filters\DriverType,
+        ];
     }
 
     /**
@@ -82,7 +84,8 @@ class Driver extends Resource
      */
     public function lenses(Request $request)
     {
-        return [];
+        return [
+        ];
     }
 
     /**
