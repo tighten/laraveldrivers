@@ -9,7 +9,7 @@ class Type extends Model
 {
     public function drivers()
     {
-        return $this->hasMany(Driver::class);
+        return $this->hasMany(Driver::class)->approved();
     }
 
     public function getRouteKeyName()

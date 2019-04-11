@@ -1,7 +1,8 @@
 <?php
 
-use App\Driver;
-use App\Type;
+use App\Http\Controllers\DriverController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\TypeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,17 +15,10 @@ use App\Type;
 |
 */
 
-Route::get('/', function () {
-    return redirect()->route('types.show', [Type::orderBy('name')->first()->name]);
-});
+Route::get('/', [HomeController::class, 'index']);
 
-Route::get('/types', function () {
-    return redirect()->route('types.show', [Type::orderBy('name')->first()->name]);
-})->name('types.index');
+Route::get('types', [TypeController::class, 'index'])->name('types.index');
+Route::get('types/{type}', [TypeController::class, 'show'])->name('types.show');
 
-Route::get('/types/{type}', function (Type $type) {
-    return view('welcome', [
-        'type' => $type,
-        'types' => Type::orderBy('name')->get(),
-    ]);
-})->name('types.show');
+Route::get('drivers/create', [DriverController::class, 'create'])->name('drivers.create');
+Route::post('drivers', [DriverController::class, 'store'])->name('drivers.store');

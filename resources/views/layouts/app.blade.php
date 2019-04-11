@@ -10,10 +10,14 @@
   </head>
   <body class="font-sans antialiased text-black leading-tight">
     <div id="app">
+      <div class="border-b flex items-center justify-center mb-8">
+          <a href="/" class="no-underline text-black"><h1 class="font-sans py-4 text-5xl">Laravel Drivers</h1></a>
+      </div>
+
       @yield('body')
 
-      <footer class="border-t container mt-8 mx-auto pt-4 px-4">
-        Site by <a href="https://tighten.co/">Tighten</a>, made in ~20 minutes. More to come, obv. <a href="https://github.com/tightenco/laraveldrivers">GitHub</a>
+      <footer class="border-t container mt-16 mx-auto pt-4 px-4">
+        Site by <a href="https://tighten.co/">Tighten</a>, made in ~20 minutes. More to come, obv. <a href="https://github.com/tightenco/laraveldrivers">GitHub</a> | <a href="{{ route('drivers.create') }}">Suggest a driver</a>
       </footer>
     </div>
     <script src="{{ mix('js/app.js') }}"></script>
