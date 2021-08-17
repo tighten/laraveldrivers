@@ -85,8 +85,7 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -469,20 +468,8 @@ img {
   height: auto;
 }
 
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
-  color: inherit;
-  opacity: .5;
-}
-
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
-  color: inherit;
-  opacity: .5;
-}
-
-input::-ms-input-placeholder,
-textarea::-ms-input-placeholder {
   color: inherit;
   opacity: .5;
 }
@@ -541,7 +528,6 @@ table {
 
 .appearance-none {
   -webkit-appearance: none;
-     -moz-appearance: none;
           appearance: none;
 }
 
@@ -4680,7 +4666,6 @@ table {
 }
 
 .sticky {
-  position: -webkit-sticky;
   position: sticky;
 }
 
@@ -5907,17 +5892,13 @@ table {
 }
 
 .select-none {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -ms-user-select: none;
+      user-select: none;
 }
 
 .select-text {
-  -webkit-user-select: text;
-     -moz-user-select: text;
-      -ms-user-select: text;
-          user-select: text;
+  -ms-user-select: text;
+      user-select: text;
 }
 
 .align-baseline {
@@ -6140,7 +6121,6 @@ table {
 
   .sm\:appearance-none {
     -webkit-appearance: none;
-       -moz-appearance: none;
             appearance: none;
   }
 
@@ -10263,7 +10243,6 @@ table {
   }
 
   .sm\:sticky {
-    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -11482,17 +11461,13 @@ table {
   }
 
   .sm\:select-none {
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+    -ms-user-select: none;
+        user-select: none;
   }
 
   .sm\:select-text {
-    -webkit-user-select: text;
-       -moz-user-select: text;
-        -ms-user-select: text;
-            user-select: text;
+    -ms-user-select: text;
+        user-select: text;
   }
 
   .sm\:align-baseline {
@@ -11714,7 +11689,6 @@ table {
 
   .md\:appearance-none {
     -webkit-appearance: none;
-       -moz-appearance: none;
             appearance: none;
   }
 
@@ -15837,7 +15811,6 @@ table {
   }
 
   .md\:sticky {
-    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -17056,17 +17029,13 @@ table {
   }
 
   .md\:select-none {
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+    -ms-user-select: none;
+        user-select: none;
   }
 
   .md\:select-text {
-    -webkit-user-select: text;
-       -moz-user-select: text;
-        -ms-user-select: text;
-            user-select: text;
+    -ms-user-select: text;
+        user-select: text;
   }
 
   .md\:align-baseline {
@@ -17288,7 +17257,6 @@ table {
 
   .lg\:appearance-none {
     -webkit-appearance: none;
-       -moz-appearance: none;
             appearance: none;
   }
 
@@ -21411,7 +21379,6 @@ table {
   }
 
   .lg\:sticky {
-    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -22630,17 +22597,13 @@ table {
   }
 
   .lg\:select-none {
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+    -ms-user-select: none;
+        user-select: none;
   }
 
   .lg\:select-text {
-    -webkit-user-select: text;
-       -moz-user-select: text;
-        -ms-user-select: text;
-            user-select: text;
+    -ms-user-select: text;
+        user-select: text;
   }
 
   .lg\:align-baseline {
@@ -22862,7 +22825,6 @@ table {
 
   .xl\:appearance-none {
     -webkit-appearance: none;
-       -moz-appearance: none;
             appearance: none;
   }
 
@@ -26985,7 +26947,6 @@ table {
   }
 
   .xl\:sticky {
-    position: -webkit-sticky;
     position: sticky;
   }
 
@@ -28204,17 +28165,13 @@ table {
   }
 
   .xl\:select-none {
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+    -ms-user-select: none;
+        user-select: none;
   }
 
   .xl\:select-text {
-    -webkit-user-select: text;
-       -moz-user-select: text;
-        -ms-user-select: text;
-            user-select: text;
+    -ms-user-select: text;
+        user-select: text;
   }
 
   .xl\:align-baseline {
