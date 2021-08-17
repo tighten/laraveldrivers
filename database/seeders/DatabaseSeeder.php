@@ -1,5 +1,7 @@
 <?php
 
+namespace Database\Seeders;
+
 use App\Driver;
 use App\Type;
 use Illuminate\Database\Seeder;
@@ -13,8 +15,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        factory(Type::class, 10)->create()->each(function ($type) {
-            factory(Driver::class, 5)->create([
+        Type::factory()->count(10)->create()->each(function ($type) {
+            Driver::factory()->count(5)->create([
                 'type_id' => $type->id,
             ]);
         });

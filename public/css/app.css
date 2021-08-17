@@ -85,7 +85,8 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -468,8 +469,12 @@ img {
   height: auto;
 }
 
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder {
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: inherit;
+  opacity: .5;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   color: inherit;
   opacity: .5;
 }
@@ -528,6 +533,7 @@ table {
 
 .appearance-none {
   -webkit-appearance: none;
+     -moz-appearance: none;
           appearance: none;
 }
 
@@ -5892,13 +5898,17 @@ table {
 }
 
 .select-none {
-  -ms-user-select: none;
-      user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .select-text {
-  -ms-user-select: text;
-      user-select: text;
+  -webkit-user-select: text;
+     -moz-user-select: text;
+      -ms-user-select: text;
+          user-select: text;
 }
 
 .align-baseline {
@@ -6121,6 +6131,7 @@ table {
 
   .sm\:appearance-none {
     -webkit-appearance: none;
+       -moz-appearance: none;
             appearance: none;
   }
 
@@ -11461,13 +11472,17 @@ table {
   }
 
   .sm\:select-none {
-    -ms-user-select: none;
-        user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
   }
 
   .sm\:select-text {
-    -ms-user-select: text;
-        user-select: text;
+    -webkit-user-select: text;
+       -moz-user-select: text;
+        -ms-user-select: text;
+            user-select: text;
   }
 
   .sm\:align-baseline {
@@ -11689,6 +11704,7 @@ table {
 
   .md\:appearance-none {
     -webkit-appearance: none;
+       -moz-appearance: none;
             appearance: none;
   }
 
@@ -17029,13 +17045,17 @@ table {
   }
 
   .md\:select-none {
-    -ms-user-select: none;
-        user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
   }
 
   .md\:select-text {
-    -ms-user-select: text;
-        user-select: text;
+    -webkit-user-select: text;
+       -moz-user-select: text;
+        -ms-user-select: text;
+            user-select: text;
   }
 
   .md\:align-baseline {
@@ -17257,6 +17277,7 @@ table {
 
   .lg\:appearance-none {
     -webkit-appearance: none;
+       -moz-appearance: none;
             appearance: none;
   }
 
@@ -22597,13 +22618,17 @@ table {
   }
 
   .lg\:select-none {
-    -ms-user-select: none;
-        user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
   }
 
   .lg\:select-text {
-    -ms-user-select: text;
-        user-select: text;
+    -webkit-user-select: text;
+       -moz-user-select: text;
+        -ms-user-select: text;
+            user-select: text;
   }
 
   .lg\:align-baseline {
@@ -22825,6 +22850,7 @@ table {
 
   .xl\:appearance-none {
     -webkit-appearance: none;
+       -moz-appearance: none;
             appearance: none;
   }
 
@@ -28165,13 +28191,17 @@ table {
   }
 
   .xl\:select-none {
-    -ms-user-select: none;
-        user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
   }
 
   .xl\:select-text {
-    -ms-user-select: text;
-        user-select: text;
+    -webkit-user-select: text;
+       -moz-user-select: text;
+        -ms-user-select: text;
+            user-select: text;
   }
 
   .xl\:align-baseline {
@@ -28384,3 +28414,4 @@ table {
     z-index: auto;
   }
 }
+
