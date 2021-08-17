@@ -15,7 +15,7 @@ class Type extends Resource
      *
      * @var string
      */
-    public static $model = 'App\Type';
+    public static $model = \App\Type::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.
