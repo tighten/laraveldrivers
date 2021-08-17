@@ -9,10 +9,6 @@
     "license": "MIT",
     "repositories": [
         {
-            "type": "vcs",
-            "url": "https://github.com/adamwathan/laravel-preset"
-        },
-        {
             "type": "composer",
             "url": "https://nova.laravel.com"
         }
@@ -25,7 +21,6 @@
         "laravel/nova": "^2.12"
     },
     "require-dev": {
-        "adamwathan/laravel-preset": "dev-master",
         "mockery/mockery": "^1.0",
         "nunomaduro/collision": "^3.0",
         "phpunit/phpunit": "^8.5.8|^9.3.3",
