@@ -1,5 +1,7 @@
 <?php
 
+namespace Database\Seeders;
+
 use App\Driver;
 use App\Type;
 use Illuminate\Database\Seeder;
