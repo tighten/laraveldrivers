@@ -2,8 +2,8 @@
 
 namespace Database\Factories;
 
-use App\Driver;
-use App\Type;
+use App\Models\Driver;
+use App\Models\Type;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class DriverFactory extends Factory

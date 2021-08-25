@@ -2,8 +2,8 @@
 
 namespace Database\Seeders;
 
-use App\Driver;
-use App\Type;
+use App\Models\Driver;
+use App\Models\Type;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder

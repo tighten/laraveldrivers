@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Driver;
-use App\Type;
+use App\Models\Driver;
+use App\Models\Type;
 use Illuminate\Http\Request;
 
 class DriverController extends Controller
