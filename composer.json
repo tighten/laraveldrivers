@@ -15,7 +15,7 @@
     ],
     "require": {
         "php": "^7.3|^8.0",
-        "laravel/framework": "^8.54",
+        "laravel/framework": "^8.77",
         "laravel/tinker": "^2.5",
         "laravel/nova": "^3.22",
         "laravel/ui": "^3.3",
