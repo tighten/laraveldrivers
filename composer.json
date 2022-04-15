@@ -15,17 +15,17 @@
     ],
     "require": {
         "php": "^7.3|^8.0",
-        "laravel/framework": "^8.54",
+        "laravel/framework": "^8.83",
         "laravel/tinker": "^2.5",
         "laravel/nova": "^3.22",
-        "laravel/ui": "^3.3",
+        "laravel/ui": "^3.4",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^6.3.1|^7.0.1"
     },
     "require-dev": {
-        "mockery/mockery": "^1.4.2",
-        "nunomaduro/collision": "^5.0",
-        "phpunit/phpunit": "^8.5.8|^9.3.3",
+        "mockery/mockery": "^1.4.4",
+        "nunomaduro/collision": "^5.10",
+        "phpunit/phpunit": "^9.5.10",
         "fakerphp/faker": "^1.9.1",
         "facade/ignition": "^2.5"
     },
